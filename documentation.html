@@ -49,6 +49,7 @@
 				branch from. Now, select that dropdown again and begin typing the name of the branch you
 				wish to create. Click "Create branch" and the branch has successfully been created.
 			</p>
+			<br />
 
 			<h4>Clone</h4>
 			<p>
@@ -61,36 +62,40 @@
 
 <pre><code>$ git clone https://github.com/100Hackers/Simulator.git</code></pre>
 			</p>
+			<br />
 
 			<h4>Checkout</h4>
 			<p>
-				The files from the created branch must now be brought locally onto the development machine.
+				Now that the repository has been setup, change directory into the repository. From inside
+				the directory, the branch created on Github can be tracked. 
 
+<pre><code>$ git checkout --track origin/Simulator</code></pre>
 			</p>
+			<br />
 
 			<h4>Commit</h4>
 			<p>
 				The files from the created branch must now be brought locally onto the development machine.
 
+<pre><code>$ git add .
+$ git commit -m "Updated collision detection to be Sweep and Prune"</code></pre>
 			</p>
+			<br />
 
 			<h4>Push</h4>
 			<p>
 				The files from the created branch must now be brought locally onto the development machine.
 
+<pre><code>$ git push</code></pre>
 			</p>
+			<br />
 
 			<h4>Pull</h4>
 			<p>
 				The files from the created branch must now be brought locally onto the development machine.
 
 			</p>
-
-
-			<pre><code>$ cd your_repo_root/repo_name
-				$ git fetch origin
-				$ git checkout gh-pages
-			</code></pre>
+			<br />
 
 		</section>
 	</div>
