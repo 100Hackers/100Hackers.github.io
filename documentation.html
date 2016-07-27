@@ -86,7 +86,7 @@ $ git commit -m "Updated collision detection to be Sweep and Prune"</code></pre>
 			<p>
 				The files from the created branch must now be brought locally onto the development machine.
 
-<pre><code>$ git push</code></pre>
+<pre><code>$ git push -u origin Simulator</code></pre>
 			</p>
 			<br />
 
@@ -96,6 +96,16 @@ $ git commit -m "Updated collision detection to be Sweep and Prune"</code></pre>
 
 			</p>
 			<br />
+
+			<h4>Rollback</h4>
+			<p>
+				<strong>The dot is important!</strong>
+
+<pre><code>$ git checkout e196f1d .
+$ git add .
+$ git commit -m "reverting to e196f1d"
+$ git push -u origin $BranchName</code></pre>
+			</p>
 
 		</section>
 	</div>
